@@ -726,6 +726,18 @@ function createGeminiAdapter(): RtlSiteAdapter {
         ${messageScope} [dir="rtl"] table {
           direction: rtl;
         }
+
+        response-element,
+        immersive-entry-chip {
+          display: flex !important;
+          justify-content: center !important;
+          margin-inline: auto !important;
+          width: 100% !important;
+        }
+
+        .inline-preview-container {
+          margin: 0 auto !important;
+        }
       `,
       "gemini"
     )
